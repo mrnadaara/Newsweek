@@ -1,0 +1,82 @@
+
+body {
+  background-color: gray;
+}
+
+.header {
+  background-color: #fe0500;
+}
+
+.wrapper {
+  background-color: white;
+}
+
+.logo div {
+  /* border: 1px solid red; */
+}
+
+.row {
+  display: flex;
+  align-items: flex-end;
+}
+
+.right-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navigation {
+  background-color: white;
+}
+
+.navbar-nav > a {
+  border-right: 1px solid #000;
+  color: black;
+}
+
+.navbar-nav > a:last-child {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: black;
+}
+
+.form-inline {
+  flex-flow: row nowrap;
+}
+
+.search-input {
+  width: 80px;
+  border: none;
+}
+
+@media only screen and (min-width: 960px) {
+  .nav-toggler-div {
+    display: none;
+  }
+
+  .nav-row {
+    width: 100%;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .navbar-nav > a {
+    border: none;
+    display: flex;
+  }
+
+  .nav-row {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
