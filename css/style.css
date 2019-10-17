@@ -11,8 +11,9 @@ body {
   background-color: white;
 }
 
-.logo div {
-  /* border: 1px solid red; */
+.header-container {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .row {
@@ -23,10 +24,15 @@ body {
 .right-header {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
-.logo img {
+img[alt="NWLogo"] {
   width: 100%;
+}
+
+img[alt="FooterLogo"] {
+  width: 40%;
 }
 
 .navigation {
@@ -55,9 +61,18 @@ body {
   border: none;
 }
 
-@media only screen and (min-width: 960px) {
+.nav-toggler-div {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
   .nav-toggler-div {
     display: none;
+  }
+
+  .wrapper {
+    width: 90%;
   }
 
   .nav-row {
@@ -69,7 +84,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 992px) {
   .navbar-nav > a {
     border: none;
     display: flex;
@@ -78,5 +93,15 @@ body {
   .nav-row {
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .center-header {
+    width: 50%;
+  }
+
+  .right-header {
+    width: 50%;
   }
 }
