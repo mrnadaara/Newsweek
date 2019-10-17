@@ -16,19 +16,51 @@ body {
   padding-left: 0;
 }
 
-.row {
+.center-header {
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .right-header {
+  color: white;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 30px;
+  padding-right: 20px;
+}
+
+.right-header > * {
+  margin-right: 10px;
+}
+
+.left-header > * {
+  margin-left: 20px;
+}
+
+.left-header {
+  margin-top: 30px;
+  color: white;
+}
+
+.sign-in {
+  color: white;
+  font-weight: bold;
+}
+
+.sub {
+  color: #fe0500;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 img[alt="NWLogo"] {
-  width: 100%;
+  width: 70%;
 }
 
 img[alt="FooterLogo"] {
@@ -66,6 +98,48 @@ img[alt="FooterLogo"] {
   align-items: center;
 }
 
+.article {
+  padding-left: 0;
+}
+
+h6 {
+  color: gray;
+}
+
+.thumbnail-container {
+  position: relative;
+  padding: 0;
+}
+
+.thumbnail {
+  width: 100%;
+  padding: 0;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(211, 209, 209, 0.9);
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.article-title {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.image-link {
+  display: block;
+}
+
+.summary {
+  color: black;
+}
+
 @media only screen and (min-width: 992px) {
   .nav-toggler-div {
     display: none;
@@ -99,9 +173,11 @@ img[alt="FooterLogo"] {
 @media only screen and (max-width: 992px) {
   .center-header {
     width: 50%;
+    margin-top: 0;
   }
 
   .right-header {
     width: 50%;
+    margin-top: 0;
   }
 }
