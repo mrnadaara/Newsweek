@@ -1,6 +1,24 @@
 
 body {
-  background-color: gray;
+  background-color: rgb(243, 243, 243);
+}
+
+.main {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+.footer {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 }
 
 .header {
@@ -14,6 +32,10 @@ body {
 .header-container {
   padding-right: 0;
   padding-left: 0;
+  margin-bottom: 15px;
+  font-family:
+    "Roboto Condensed",
+    sans-serif;
 }
 
 .center-header {
@@ -59,6 +81,11 @@ body {
   padding-bottom: 0;
 }
 
+.fa-bars {
+  color: rgb(236, 236, 236, 0.7);
+  font-size: 25px;
+}
+
 img[alt="NWLogo"] {
   width: 70%;
 }
@@ -72,8 +99,10 @@ img[alt="FooterLogo"] {
 }
 
 .navbar-nav > a {
-  border-right: 1px solid #000;
+  border-right: 1px solid rgb(219, 219, 219);
   color: black;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .navbar-nav > a:last-child {
@@ -102,8 +131,17 @@ img[alt="FooterLogo"] {
   padding-left: 0;
 }
 
+.middle-article {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 h6 {
   color: gray;
+  margin-bottom: 20px;
+  font-family:
+    "Roboto Condensed",
+    sans-serif;
 }
 
 .thumbnail-container {
@@ -111,7 +149,8 @@ h6 {
   padding: 0;
 }
 
-.thumbnail {
+.thumbnail,
+.opinion-thumbnail {
   width: 100%;
   padding: 0;
 }
@@ -134,10 +173,56 @@ h6 {
 
 .image-link {
   display: block;
+  width: 100%;
 }
 
 .summary {
   color: black;
+}
+
+.navbar {
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.culture {
+  background-color: #f0f0f0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.culture h6 {
+  padding: 15px 20px;
+  margin-bottom: 0;
+}
+
+.more {
+  border-bottom: 1px solid rgb(219, 219, 219);
+  margin-bottom: 20px;
+}
+
+.more h6 {
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+
+.more-thumbnail,
+.opinion-thumbnail {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.opinion {
+  margin-left: 15px;
+}
+
+.opinion h6 {
+  padding: 5px 0;
+}
+
+.opinion-title {
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -162,22 +247,40 @@ h6 {
   .navbar-nav > a {
     border: none;
     display: flex;
+    font-weight: bold;
+    font-size: 20px;
   }
 
   .nav-row {
     display: flex;
     justify-content: flex-end;
   }
-}
 
-@media only screen and (max-width: 992px) {
   .center-header {
-    width: 50%;
+    width: 40%;
     margin-top: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+  }
+
+  img[alt="NWLogo"] {
+    width: 150px;
+    margin-left: 10px;
   }
 
   .right-header {
-    width: 50%;
+    width: 60%;
     margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .opinion-thumbnail {
+    width: 10%;
+  }
+
+  .opinion-summary {
+    width: 90%;
   }
 }
