@@ -13,6 +13,7 @@ body {
 }
 
 .footer {
+  margin-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
   font-family:
@@ -309,6 +310,22 @@ h6 {
   right: 0;
 }
 
+.ad-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 70px;
+}
+
+.ad-title {
+  font-size: 20px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 992px) {
   .nav-toggler-div {
     display: none;
@@ -324,6 +341,11 @@ h6 {
 
   .navbar {
     width: 100%;
+  }
+
+  .image {
+    height: 100%;
+    width: 150px;
   }
 }
 
@@ -357,6 +379,22 @@ h6 {
     width: 60%;
     margin-top: 0;
   }
+
+  .ad-container {
+    position: relative;
+    left: 30%;
+    top: 10px;
+    height: 250px;
+    width: 250px;
+  }
+
+  .ad-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%;
+    padding-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -366,5 +404,21 @@ h6 {
 
   .opinion-summary {
     width: 90%;
+  }
+
+  .ad-container {
+    position: relative;
+    left: 20%;
+    top: 10px;
+    height: 250px;
+    width: 250px;
+  }
+
+  .ad-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-top: 20px;
   }
 }
