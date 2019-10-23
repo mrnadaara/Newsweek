@@ -28,6 +28,8 @@ body {
 
 .wrapper {
   background-color: white;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .header-container {
@@ -285,6 +287,22 @@ h6 {
   padding-bottom: 10px;
 }
 
+.count-link {
+  width: 70px;
+  height: 52px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 58px;
+  text-indent: 5px;
+  text-align: center;
+  background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+  color: #e9212e;
+}
+
 .ad {
   background-color: rgba(211, 209, 209, 0.9);
   padding-bottom: 20px;
@@ -324,6 +342,11 @@ h6 {
 .footer a {
   color: black;
   text-decoration: none;
+}
+
+.footer i {
+  font-size: 30px;
+  color: #747474;
 }
 
 @media only screen and (min-width: 992px) {
@@ -394,6 +417,15 @@ h6 {
     align-items: center;
     padding-left: 20%;
     padding-top: 20px;
+  }
+
+  .header-container {
+    position: fixed;
+    z-index: 1;
+  }
+
+  .main {
+    padding-top: 80px;
   }
 }
 
