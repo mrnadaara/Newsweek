@@ -1,6 +1,25 @@
 
 body {
-  background-color: gray;
+  background-color: rgb(243, 243, 243);
+}
+
+.main {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+.footer {
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 }
 
 .header {
@@ -9,24 +28,73 @@ body {
 
 .wrapper {
   background-color: white;
+  padding-right: 0;
+  padding-left: 0;
 }
 
-.logo div {
-  /* border: 1px solid red; */
+.header-container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 15px;
+  font-family:
+    "Roboto Condensed",
+    sans-serif;
 }
 
-.row {
+.center-header {
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .right-header {
+  color: white;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  margin-top: 30px;
+  padding-right: 20px;
 }
 
-.logo img {
-  width: 100%;
+.right-header > * {
+  margin-right: 10px;
+}
+
+.left-header > * {
+  margin-left: 20px;
+}
+
+.left-header {
+  margin-top: 30px;
+  color: white;
+}
+
+.sign-in {
+  color: white;
+  font-weight: bold;
+}
+
+.sub {
+  color: #fe0500;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.fa-bars {
+  color: rgb(236, 236, 236, 0.7);
+  font-size: 25px;
+}
+
+img[alt="NWLogo"] {
+  width: 70%;
+}
+
+img[alt="FooterLogo"] {
+  width: 40%;
 }
 
 .navigation {
@@ -34,8 +102,10 @@ body {
 }
 
 .navbar-nav > a {
-  border-right: 1px solid #000;
+  border-right: 1px solid rgb(219, 219, 219);
   color: black;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .navbar-nav > a:last-child {
@@ -55,9 +125,237 @@ body {
   border: none;
 }
 
-@media only screen and (min-width: 960px) {
+.nav-toggler-div {
+  display: flex;
+  align-items: center;
+}
+
+.article {
+  padding-left: 0;
+}
+
+.middle-article {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h6 {
+  color: gray;
+  margin-bottom: 20px;
+  font-family:
+    "Roboto Condensed",
+    sans-serif;
+}
+
+.thumbnail-container {
+  position: relative;
+  padding: 0;
+}
+
+.thumbnail,
+.opinion-thumbnail {
+  width: 100%;
+  padding: 0;
+}
+
+.caption,
+.mag-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(211, 209, 209, 0.9);
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.article-title {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.image-link {
+  display: block;
+  width: 100%;
+}
+
+.summary {
+  color: black;
+}
+
+.navbar {
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.culture {
+  background-color: #f0f0f0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.culture h6 {
+  padding: 15px 20px;
+  margin-bottom: 0;
+}
+
+.more {
+  border-bottom: 1px solid rgb(219, 219, 219);
+  margin-bottom: 20px;
+}
+
+.more h6 {
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+
+.more-thumbnail,
+.opinion-thumbnail {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.opinion {
+  margin-left: 15px;
+}
+
+.opinion h6 {
+  padding: 5px 0;
+}
+
+.opinion > h5 {
+  color: #fe0500;
+  font-weight: bold;
+}
+
+.opinion-title {
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.more > h4 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.magazine {
+  margin-bottom: 20px;
+}
+
+.icon-n {
+  flex: none;
+  display: block;
+  width: 29px;
+  height: 28px;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.cat {
+  color: #fe0500;
+  font-weight: bold;
+}
+
+.mag-cat {
+  color: white;
+  font-weight: bold;
+  background-color: #fe0500;
+  border-radius: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.mag-features {
+  color: black;
+  background-color: rgba(211, 209, 209, 0.9);
+  font-weight: bold;
+  border-radius: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.mag-caption {
+  color: white;
+  font-weight: bold;
+  background-color: #fe0500;
+  padding: 0;
+}
+
+.extra-news {
+  padding-bottom: 10px;
+}
+
+.count-link {
+  width: 70px;
+  height: 52px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 58px;
+  text-indent: 5px;
+  text-align: center;
+  background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+  color: #e9212e;
+}
+
+.ad {
+  background-color: rgba(211, 209, 209, 0.9);
+  padding-bottom: 20px;
+}
+
+.ad-container {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  height: 250px;
+  width: 250px;
+}
+
+.ad-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ad-next {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.ad-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 70px;
+}
+
+.ad-title {
+  font-size: 20px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer i {
+  font-size: 30px;
+  color: #747474;
+}
+
+@media only screen and (min-width: 992px) {
   .nav-toggler-div {
     display: none;
+  }
+
+  .wrapper {
+    width: 90%;
   }
 
   .nav-row {
@@ -67,16 +365,92 @@ body {
   .navbar {
     width: 100%;
   }
+
+  .image {
+    height: 100%;
+    width: 150px;
+  }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 992px) {
   .navbar-nav > a {
     border: none;
     display: flex;
+    font-weight: bold;
+    font-size: 20px;
   }
 
   .nav-row {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .center-header {
+    width: 40%;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+  }
+
+  img[alt="NWLogo"] {
+    width: 150px;
+    margin-left: 10px;
+  }
+
+  .right-header {
+    width: 60%;
+    margin-top: 0;
+  }
+
+  .ad-container {
+    position: relative;
+    left: 30%;
+    top: 10px;
+    height: 250px;
+    width: 250px;
+  }
+
+  .ad-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%;
+    padding-top: 20px;
+  }
+
+  .header-container {
+    position: fixed;
+    z-index: 1;
+  }
+
+  .main {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .opinion-thumbnail {
+    width: 10%;
+  }
+
+  .opinion-summary {
+    width: 90%;
+  }
+
+  .ad-container {
+    position: relative;
+    left: 20%;
+    top: 10px;
+    height: 250px;
+    width: 250px;
+  }
+
+  .ad-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-top: 20px;
   }
 }
