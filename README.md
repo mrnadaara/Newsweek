@@ -14,7 +14,7 @@ mobile responsive and Bootstrap allows you to create front end apps that work on
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://mrnadaara.github.io/Newsweek/)
 
 
 ## Getting Started
